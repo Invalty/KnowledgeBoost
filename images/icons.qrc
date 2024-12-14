@@ -1,0 +1,34 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>бизи утка.png</file>
+    <file>дерево.jpg</file>
+    <file>утткк.png</file>
+    <file>финал.png</file>
+    <file>утка 2 фон.png</file>
+    <file>заново.png</file>
+    <file>галоччка.png</file>
+    <file>налево.png</file>
+    <file>закрыть.png</file>
+    <file>направо.png</file>
+    <file>переворот.png</file>
+    <file>утка 2 фон.png</file>
+    <file>утка 3.png</file>
+    <file>3точки.png</file>
+    <file>фон утка.png</file>
+    <file>облачка.png</file>
+    <file>сердце.png</file>
+    <file>удалить.png</file>
+    <file>утка.png</file>
+    <file>плюс.png</file>
+    <file>лого.png</file>
+    <file>аналитика.png</file>
+    <file>лупа.png</file>
+    <file>папка.png</file>
+    <file>выход.png</file>
+    <file>меню.png</file>
+    <file>дом.png</file>
+    <file>настройки.png</file>
+    <file>карточки.png</file>
+    <file>пользователь.png</file>
+  </qresource>
+</RCC>

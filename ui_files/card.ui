@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>580</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>580</width>
+    <height>780</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(211, 209, 251);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>80</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>20</number>
+     </property>
+     <property name="rightMargin">
+      <number>23</number>
+     </property>
+     <property name="bottomMargin">
+      <number>15</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="back_button">
+       <property name="minimumSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../Users/Евгения/PycharmProjects/Downloads/назад.png</normaloff>../../../Users/Евгения/PycharmProjects/Downloads/назад.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>179</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">	text-align: center;
+	font: 17pt &quot;Comic Sans MS&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>FLASHCARD</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Create_flashcard">
+       <property name="minimumSize">
+        <size>
+         <width>124</width>
+         <height>38</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>138</width>
+         <height>43</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color: rgb(207, 164, 255);
+	border-radius: 10px;
+	text-align: center;
+	font: 13pt &quot;Comic Sans MS&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Create</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="minimumSize">
+      <size>
+       <width>580</width>
+       <height>600</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QScrollArea{
+	border: 2px solid rgb(255, 255, 255,0);
+}
+
+QWidget{background-color: rgb(211, 209, 251);
+}
+
+QScrollBAr:vertical{
+	background-color: rgb(119, 255, 251);
+	width: 1px;
+	margin: 15px 0 15px 0;
+	boder-radius: 0px;
+}
+
+
+QScrollBar::handle:vertical{
+	background-color:rgb(207, 164, 255);
+	min-height: 30px;
+	border-radius: 7px;
+}
+
+QScrollBar::handle:vertical:pressed{
+	background-color: rgb(207, 164, 255);
+	border-radius: 11px;
+}
+
+QScrollBar::sub-line:vertical{
+	background-color: rgb(255, 255, 255);
+	height:11px;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;	
+}
+
+QScrollBar::sub-line:vertical:pressed{
+	background-color: rgb(255, 255, 255);
+}
+
+
+QScrollBar::add-line:vertical{
+	background-color: rgb(255, 255, 255);
+	height:11px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin	
+}
+
+QScrollBar::add-line:vertical:hover{
+	background-color: rgb(255, 255, 255);
+}
+
+
+
+
+QScrollBar::add-line:vertical:pressed{
+	background-color: rgb(255, 255, 255);
+}
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical{
+	background: none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical{
+	background:none;
+}</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollWidgets">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>576</width>
+        <height>596</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>15</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetMinimumSize</enum>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>36</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">	text-align: center;
+	font: 13pt &quot;Comic Sans MS&quot;;
+</string>
+           </property>
+           <property name="text">
+            <string>Title</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="Titlee">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>204</width>
+             <height>33</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>170</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-radius: 10px;
+background-color: rgb(255, 255, 255);
+font: 11pt &quot;Comic Sans MS&quot;;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string>Введите заголовок...</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">	text-align: center;
+	font: 13pt &quot;Comic Sans MS&quot;;
+</string>
+           </property>
+           <property name="text">
+            <string>Description</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="Descript">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>103</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>130</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QWidget{
+border-radius: 11px;
+font: 11pt &quot;Comic Sans MS&quot;;
+border: 2px solid rgb(255, 255, 255,0);
+background-color: rgb(255, 255, 255);
+}
+
+QScrollBAr:vertical{
+	background-color: rgb(211, 209, 251);
+	width: 1px;
+	margin: 15px 0 15px 0;
+	boder-radius: 0px;
+}
+
+QScrollBar::handle:vertical{
+	background-color:rgb(202, 160, 248);
+	min-height: 30px;
+	border-radius: 7px;
+}
+
+QScrollBar::handle:vertical:pressed{
+	background-color: rgb(207, 164, 255);
+	border-radius: 11px;
+}
+
+QScrollBar::sub-line:vertical{
+	background-color: rgb(255, 255, 255);
+	height:11px;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;	
+}
+
+QScrollBar::sub-line:vertical:pressed{
+	background-color: rgb(255, 255, 255);
+}
+
+QScrollBar::add-line:vertical{
+	background-color: rgb(255, 255, 255);
+	height:11px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin	
+}
+
+QScrollBar::add-line:vertical:hover{
+	background-color: rgb(255, 255, 255);
+}
+
+QScrollBar::add-line:vertical:pressed{
+	background-color: rgb(255, 255, 255);
+}
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical{
+	background:none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical{
+	background:none;
+}</string>
+           </property>
+           <property name="placeholderText">
+            <string>Введите описание...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="layout">
+         <property name="spacing">
+          <number>25</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetFixedSize</enum>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="maximumSize">
+            <size>
+             <width>480</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">	text-align: center;
+	font: 13pt &quot;Comic Sans MS&quot;;
+</string>
+           </property>
+           <property name="text">
+            <string>Card</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>440</width>
+             <height>160</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:10px;</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <property name="spacing">
+             <number>10</number>
+            </property>
+            <property name="leftMargin">
+             <number>20</number>
+            </property>
+            <property name="topMargin">
+             <number>20</number>
+            </property>
+            <property name="rightMargin">
+             <number>20</number>
+            </property>
+            <property name="bottomMargin">
+             <number>20</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QLabel" name="term_label">
+                <property name="minimumSize">
+                 <size>
+                  <width>363</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">
+	font: 11pt &quot;Comic Sans MS&quot;;
+</string>
+                </property>
+                <property name="text">
+                 <string>Term</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="delete_button">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../../../Users/Евгения/PycharmProjects/Knowledge/images/icons.qrc">
+                  <normaloff>:/newPrefix/удалить.png</normaloff>:/newPrefix/удалить.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>23</width>
+                  <height>23</height>
+                 </size>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="Term">
+              <property name="styleSheet">
+               <string notr="true">font: 11pt &quot;Comic Sans MS&quot;;
+border-radius: 0px;
+  border-bottom: 2px solid black;  /* Стиль подчеркивания */</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="definition_label">
+              <property name="styleSheet">
+               <string notr="true">	text-align: center;
+	font: 11pt &quot;Comic Sans MS&quot;;
+</string>
+              </property>
+              <property name="text">
+               <string>Definition</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="Definition">
+              <property name="styleSheet">
+               <string notr="true">font: 11pt &quot;Comic Sans MS&quot;;
+border-radius: 0px;
+  border-bottom: 2px solid black;  /* Стиль подчеркивания */</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetFixedSize</enum>
+     </property>
+     <property name="topMargin">
+      <number>20</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>20</number>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>181</width>
+         <height>42</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="add_card">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>180</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color: rgb(207, 164, 255);
+	border-radius: 20px;
+	text-align: center left;
+	font: 13pt &quot;Comic Sans MS&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>         Add</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../Users/Евгения/PycharmProjects/Knowledge/images/icons.qrc">
+         <normaloff>:/newPrefix/плюс.png</normaloff>:/newPrefix/плюс.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>33</width>
+         <height>33</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>170</width>
+         <height>45</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../Users/Евгения/PycharmProjects/Knowledge/images/icons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>delete_button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>widget</receiver>
+   <slot>deleteLater()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>419</x>
+     <y>563</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>558</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
